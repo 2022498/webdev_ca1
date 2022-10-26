@@ -20,7 +20,7 @@
 
 <!-- Once I did was create the Menus with the number and names of tables that i getting in Database Step --> 
     <ul id = "menu-h">
-      <li><a href ="HrWebsite.html">Home</a></li>
+
       <li><a href ="Employess.html">Employee</a></li>
       <li><a href="Job Title.html">Job Title</a></li>
       <li><a href="Department.html">Department</a></li>
@@ -34,7 +34,9 @@
     <p> The table above employee contain all the personal information necessary about our employee and it's conect with salary tables where you can find information about salary as inicial salary, increases and promotions.</p>
   
 
-    <table> <tr>
+    <table class="zebra"> 
+      <thead>      
+      <tr>
       <th>ID </th>
       <th>First Name</th>
       <th>Last Name</th>
@@ -43,7 +45,8 @@
       <th>Hire date</th>
       <th>ID of Salary</th>
     </tr> 
-      
+   </thead>
+<tbody>
     <tr>
       <td>00001</td>
       <td>John</td>
@@ -209,7 +212,7 @@
       <td>29/06/98</td>
       <td>Female</td>
       <td>07/04/22</td>
-      <td>B2</td> 
+      <td>2</td> 
     </tr>      
 
     <tr>
@@ -242,6 +245,6 @@
       <td>9</td>
     </tr>
 
-
+  </tbody>
   </table>
   </body> 

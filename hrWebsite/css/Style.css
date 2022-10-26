@@ -3,37 +3,27 @@
 * {
     margin:  0;
     padding: 0;
-    box-sizing: 0;
-
-    
-}
+    box-sizing: 0;  }
 
  body{
-    text-align: center;
+text-align: center;
 
-    padding: 180px;
+margin:auto;
+font: normal medium/1.4 sans-serif;
+}
+table {
+  border-collapse: collapse;
+  width: 90%;
+
     background-image:url(../Image/empr_230-human_resources.png);
-    opacity: 0px;
-
- 
- }
+    opacity: 0px;}
 
  .image{
     background-color: rgba(53, 11, 138, 0.082);
     background-position: 1050px;
     opacity: var(../Image/18688.jpg);
-    opacity: .3;
- }
-
-
-
-
-th,td{
-
-    border: 2px solid rgb(12, 10, 10);
-    padding: 1.5rem;
-}
-  
+    opacity: .3; 
+}  
  
  #menu-h { 
 
@@ -64,5 +54,15 @@ th,td{
     background-color: rgb(192, 23, 23);
 }
 
+tbody tr:nth-child(odd) {
+    background: rgb(174, 174, 175);
+
+}
+
+  th, td {
+    padding: 1.5rem;
+    text-align: center;
+    border: 1.3px solid rgb(0, 0, 0);
+  }
 
     
