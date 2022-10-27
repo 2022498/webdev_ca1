@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
 
-  <head> 
+<head> 
 
-    <!-- I chose in this part the configuration for my website, names, title and keyboard. --> 
-    <meta charset="utf-8">
-    <meta name=" author" content=" Felipe ">
-    <meta name=" HR WebSite " content="HR WebSite">
-    <title> HR DEPARTMENT - HOME </title>
+  <!-- I chose in this part the configuration for my website, names, title and keyboard. --> 
+  <meta charset="utf-8">
+  <meta name=" author" content=" Felipe ">
+  <meta name=" HR WebSite " content="HR WebSite">
+  <title> SALARY </title>
   
-  </head>
+</head>
+<body>
 
-
-  <body>
-
-    <link rel="stylesheet" href="css/Style.css">
-    <h1 class="name">  HR DEPARTMENT </h1>
+  <link rel="stylesheet" href="css/Style.css">
+  <h1 class="name">  HR DEPARTMENT </h1>
 
 <!-- Once I did was create the Menus with the number and names of tables that i getting in Database Step --> 
     
 <ul id="menu-h">
       
-    
+
       <li><a href ="Employess.html">Employee</a></li>
       <li><a href="Job Title.html">Job Title</a></li>
       <li><a href="Department.html">Department</a></li>
@@ -35,7 +33,9 @@
     <p> The table above employee contain all the personal information necessary about our employee and it's conect with salary tables where you can find information about salary as inicial salary, increases and promotions.</p>
   
 
-    <table> <tr>
+    <table> 
+      <thead>  
+        <tr>
       <th>ID </th>
       <th>ID Employee</th>
       <th>ID Employee</th>
@@ -43,7 +43,10 @@
       <th>Date end</th>
       
       </tr>
-      
+    </thead>  
+
+    <tbody> 
+   
     <tr>
       <td>00001</td>
       <td>00001</td>
@@ -124,6 +127,7 @@
       <td>07/01/21</td>
       <td> - </td>
     </tr>
+</tbody> 
   
   </table>
   </body> 

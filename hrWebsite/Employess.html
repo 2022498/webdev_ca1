@@ -1,71 +1,67 @@
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
 
-  <head> 
-    <!-- I chose in this part the configuration for my website, names, title and keyboard. --> 
-    <meta charset= "utf-8" >
-    <meta name= "author" content= "Felipe" >
-    <meta name= "HR WebSite " content= "HR WebSite">
-    <title> HR DEPARTMENT - HOME </title>
+<head> 
   
-  </head>
+  <meta name= "author" content= "Felipe" >
+  <meta charset= "utf-8" >
+  <meta name= "HR WebSite " content= "HR WebSite">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <link rel="stylesheet" href="css/Style.css">
+  <title>  HR DEPARTMENT </title>
+
+</head>
 
 
-  <body>
+<body>
+  <h1 class="title"> HR DEPARTMENT </h1>
 
-    <link rel="stylesheet" href="css/Style.css">
+  <ul id="menu-h">   
+    <li><a href ="Employess.html">Employee</a></li>
+    <li><a href="Job Title.html">Job Title</a></li>
+    <li><a href="Department.html">Department</a></li>
+    <li><a href="Department Manager.html">Department Manager</a></li>
+    <li><a href="Salary.html">Salary</a></li> 
+
+  </ul>
+    
+  <h2 class="table_name" > EMPLOYEE LIST</h2>
+  <p class="description_table"> The table above employee contain all the personal information necessary about our company and it's connect with salary tables where you can find information about salary as inicial salary, increases and promotions.</p>
    
-    <h1>  HR DEPARTMENT </h1>
-    
-
-<!-- Once I did was create the Menus with the number and names of tables that i getting in Database Step --> 
-    <ul id = "menu-h">
-
-      <li><a href ="Employess.html">Employee</a></li>
-      <li><a href="Job Title.html">Job Title</a></li>
-      <li><a href="Department.html">Department</a></li>
-      <li><a href="Department Manager.html">Department Manager</a></li>
-      <li><a href="Salary.html">Salary</a></li>
-    
-    </ul>
-
-    <h2 > EMPLOYEE TABLE</h2>
-
-    <p> The table above employee contain all the personal information necessary about our employee and it's conect with salary tables where you can find information about salary as inicial salary, increases and promotions.</p>
-  
-
-    <table class="zebra"> 
-      <thead>      
+  <table>
+    <thead>  
       <tr>
-      <th>ID </th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Date of birth</th>
-      <th>Gender</th>
-      <th>Hire date</th>
-      <th>ID of Salary</th>
-    </tr> 
-   </thead>
-<tbody>
-    <tr>
-      <td>00001</td>
-      <td>John</td>
-      <td>Smith</td>
-      <td>12/06/90</td>
-      <td>Male</td>
-      <td>12/10/20</td>
-      <td>1</td>
-    </tr>
-    
-    <tr>
-      <td>00002</td>
-      <td>Maria</td>
-      <td>Clark</td>
-      <td>10/10/80</td>
-      <td>Female</td>
-      <td>12/10/20</td>
-      <td>1</td>
-    </tr>
+        <th>ID </br><i>(integer)</br></i><span class="material-icons" title = "Primary key">star</span></th>
+        <th>First Name</br><i>(String)</i></th>
+        <th>Last Name</br><i>(String)</i></th>
+        <th>Date of birth</br><i>(Date)</i></th>
+        <th>Gender</br><i>(String)</i></th>
+        <th>Hire date</br><i>(Date)</i></th>
+        <th>ID Salary</br> <i>(Double)</br></i><span class="material-icons" title="Foreign key">star_border</span></th>
+      </tr> 
+    </thead>
+
+    <tbody> 
+      <tr>
+        <td>00001</td>
+        <td>John</td>
+        <td>Smith</td>
+        <td>12/06/90</td>
+        <td>Male</td>
+        <td>12/10/20</td>
+        <td>1</td>
+        </tr>
+
+      <tr>
+        <td>00002</td>
+        <td>Maria</td>
+        <td>Clark</td>
+        <td>10/10/80</td>
+        <td>Female</td>
+        <td>12/10/20</td>
+        <td>1</td>
+      </tr>
 
     <tr>
       <td>00003</td>
@@ -243,8 +239,9 @@
       <td>Male</td>
       <td>07/04/22</td>
       <td>9</td>
+    
     </tr>
-
-  </tbody>
+  </tbody> 
   </table>
+
   </body> 

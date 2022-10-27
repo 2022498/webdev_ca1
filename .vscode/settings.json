@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/workspace/webdev_lab/hrWebsite/HrWebsite.html"
+    "livePreview.defaultPreviewPath": "/workspace/webdev_lab/hrWebsite/HrWebsite.html",
+    "liveServer.settings.port": 5501
 }
