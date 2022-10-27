@@ -1,45 +1,42 @@
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
 
-  <head> 
-
-    <!-- I chose in this part the configuration for my website, names, title and keyboard. --> 
-    <meta charset="utf-8">
-    <meta name=" author" content=" Felipe ">
-    <meta name=" HR WebSite " content="HR WebSite">
-    <title> HR DEPARTMENT - HOME </title>
+<head> 
   
-  </head>
+  <meta name= "author" content= "Felipe" >
+  <meta charset= "utf-8" >
+  <meta name= "HR WebSite " content= "HR WebSite">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <link rel="stylesheet" href="css/Style.css">
+  <title>  HR DEPARTMENT </title>
+
+</head>
 
 
-  <body>
+<body>
+  <h1 class="title"> HR DEPARTMENT </h1>
 
-    <link rel="stylesheet" href="css/Style.css">
-    <h1 class="name">  HR DEPARTMENT </h1>
+  <ul id="menu-h">   
+    <li><a href ="Employess.html">Employee</a></li>
+    <li><a href="Job Title.html">Job Title</a></li>
+    <li><a href="Department.html">Department</a></li>
+    <li><a href="Department Manager.html">Department Manager</a></li>
+    <li><a href="Salary.html">Salary</a></li> 
 
-<!-- Once I did was create the Menus with the number and names of tables that i getting in Database Step --> 
+  </ul>
     
-<ul id="menu-h">
-      
-     
-      <li><a href ="Employess.html">Employee</a></li>
-      <li><a href="Job Title.html">Job Title</a></li>
-      <li><a href="Department.html">Department</a></li>
-      <li><a href="Department Manager.html">Department Manager</a></li>
-      <li><a href="Salary.html">Salary</a></li>
-      
-    </ul>
-    <h2 >DEPARTMENTS</h2>
+  <h2 class="table_name" >DEPARTMENT</h2>
 
-    <p> The table above employee contain all the personal information necessary about our employee and it's conect with salary tables where you can find information about salary as inicial salary, increases and promotions.</p>
+  <p class="description_table"> The table above employee contain all the personal information necessary about our employee and it's conect with salary tables where you can find information about salary as inicial salary, increases and promotions.</p>
   
 
-    <table> 
-      <thead>  
-        <tr>
+  <table >
+    <thead class="header" id="fixed">  
+      <tr>
 
-      <th>ID </th>
-      <th>Department name</th>
+      <th>ID </br><i>(integer)</br></i><span class="material-icons" title = "Primary key">flag</span></th>
+      <th>Department name</br><i>(String)</i></th>
 
       </tr>
     </thead> 

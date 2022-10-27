@@ -3,12 +3,18 @@
 * {
   margin:  0;
   padding: 0;
-  box-sizing: 0;  }
+  box-sizing: 0;  
+}
+.title{
+  color:rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.87);
+  background-size: 100%;
+  text-align: center;
 
+}
 body{
-
 text-align: center;
-margin: 12,5cm;
+margin: cm;
 padding: 5%;
 font: normal medium/1.4 sans-serif;
 }
@@ -21,11 +27,12 @@ body{
 }
 
 
-  #menu-h { 
-    width: 100%;
-    padding: 15px;
-    background-color: rgb(15, 14, 14);  
-    text-align: center;
+#menu-h { 
+    
+  background-color: rgba(15, 14, 14, 0.884);  
+  background-size: 100%;
+  text-align: center;
+
  }
 
 #menu-h li{
@@ -41,27 +48,45 @@ body{
   transition: background 1s; 
   text-align: center;
      
-  }
+}
 
 
 #menu-h li a:hover{  
-    background-color: rgb(192, 23, 23);
+  background-color: rgb(191, 194, 19);
 }
 
-/employee{
-  background-color: rgb(255, 255, 255);
-  line-height:cm;
+.table_name{
+  background-color: rgb(174, 174, 175, 0.952);
+  text-align: center;
 }
+
+.description_table{
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(174, 174, 175, 0.952);
+  color: black;
+}
+
+
 table {
-  margin: 4cm;
+ 
+  text-align: center;
   border-collapse: collapse;
-  width: 25cm;
-  background-color: rgb(228, 228, 228);
+  width:100%;
+  background-color: rgba(231, 226, 226, 0.89);
 }
+
 
 tbody tr:nth-child(odd) {
     background: rgba(174, 174, 175, 0.952);
 
+}
+
+th{
+  color: rgb(0, 0, 0);
+  position: sticky;
+  border: 3px solid;
+  background-color: rgb(87, 85, 85);
 }
 
 th, td {
@@ -71,4 +96,24 @@ th, td {
   }
 
   
+.header
+{
+  position: sticky;
+  top: 0;
+}
+  .content {
+    padding: 16px;
+  }
   
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 102px;
+  }
+}
