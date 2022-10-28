@@ -9,6 +9,7 @@
   background-color: rgba(202, 202, 202, 0.877);
 }
 
+
 body{
   text-align: center;
   margin: 12,5cm;
@@ -30,9 +31,11 @@ body{
 
 }
 
+
 #menu-h li{
   display: inline;
 }
+
 
 #menu-h li a{
 
@@ -40,20 +43,22 @@ body{
   color: rgb(255, 255, 255);
   text-decoration: none;
   padding: 19px;
-  transition: background 1s; 
-  text-align: center;
 
+  
 }
 
 
-#menu-h li a:hover{  
+#menu-h li a:hover{  /* Used to put colour when you pass o mouse on the menu*/
+  transition: background 1s; 
   background-color: rgb(191, 194, 19);
 }
+
 
 .table_name{
   background-color: rgb(174, 174, 175, 0.952);
   text-align: center;
 }
+
 
 .description_table{
   
@@ -64,7 +69,6 @@ body{
 
 
 table { 
-  
   
   border-collapse: collapse;
   font-family: 'Calibri';
@@ -80,19 +84,22 @@ tbody tr:nth-child(odd) {
 
 }
 
+
 th{
   color: rgb(0, 0, 0);
   position: sticky;
   background-color: rgb(87, 85, 85);
 }
-table,th, td, tbody thead {
+
+
+th, td {
   margin: 0;
-  padding: 0;
+  padding: 0.25rem;
   border: 0;
   font-size: 100%;
   font: inherit; vertical-align: baseline;
   border: 1px solid rgb(0, 0, 0);
-  }
+}
 
   
 .header{
@@ -112,6 +119,6 @@ table,th, td, tbody thead {
 }
   
 
-  .sticky + .content {
-    padding-top: 102px;
-  }
+.sticky + .content {
+  padding-top: 102px;
+}
