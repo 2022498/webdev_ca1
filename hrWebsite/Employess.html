@@ -27,16 +27,40 @@
   <h2 class="table_name" > EMPLOYEE LIST</h2> 
   <p class="description_table"> The table above employee contain all the personal information necessary about our company and it's connect with salary tables where you can find information about salary as inicial salary, increases and promotions.</p>
    
-  <table >
+  <table>
+
+    <thead>
+      <tr>
+        <th>Gender_ID</br><i>(Int)</br></i><img src="https://img.icons8.com/color/25/000000/key-security.png" title = "Primary key"></th></br><i>(Int)</i></th>
+        <th>Gender</br><i>(String)</i></th> 
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Male</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Female</td>
+      </tr>
+     
+      
+    </tbody>
+  </table>
+
+  <table>
     <thead class="header" id="fixed">  
       <tr>
         <th>Employee ID </br><i>(Int)</br></i><img src="https://img.icons8.com/color/25/000000/key-security.png" title = "Primary key"></th>
         <th>First Name</br><i>(String)</i></th> 
         <th>Last Name</br><i>(String)</i></th>
         <th>Date of birth</br><i>(Date)</i></th>
-        <th>Gender</br><i>(String)</i></br>
+        <th>Gender_ID</br><i>(Int)</br></i><img src="https://img.icons8.com/windows/25/F25081/key-security.png" title = "Foreign key"></th>
         <th>Hire date</br><i>(Date)</i></th> 
-        <th>Salary ID</br> <i>(Double)</br></i><img src="https://img.icons8.com/windows/25/F25081/key-security.png" title = "Foreign key"></th>
+        <th>Salary ID</br><i>(Int)</br></i><img src="https://img.icons8.com/windows/25/F25081/key-security.png" title = "Foreign key"></th>
       </tr> 
     </thead>
 
@@ -46,7 +70,7 @@
         <td>John</td>
         <td>Smith</td>
         <td>12/06/90</td>
-        <td>Male</td>
+        <td>1</td>
         <td>12/10/20</td>
         <td>1</td>
       </tr>
@@ -56,7 +80,7 @@
         <td>Maria</td>
         <td>Clark</td>
         <td>10/10/80</td>
-        <td>Female</td>
+        <td>2</td>
         <td>12/10/20</td>
         <td>1</td>
       </tr>
@@ -66,7 +90,7 @@
         <td>Lucas</td>
         <td>Oliveira</td>
         <td>08/11/70</td>
-        <td>Male</td>
+        <td>1</td>
         <td>02/11/20</td>
         <td>2</td>
       </tr>
@@ -76,7 +100,7 @@
         <td>Henry</td>
         <td>Ross</td>
         <td>09/02/72</td>
-        <td>Male</td>
+        <td>1</td>
         <td>18/12/2</td>
         <td>3</td>
       </tr>
@@ -86,7 +110,7 @@
         <td>Liam</td>
         <td>O'Conell</td>
         <td>11/02/99</td>
-        <td>Male</td>
+        <td>1</td>
         <td>18/12/20</td>
         <td>4</td>
       </tr>
@@ -96,7 +120,7 @@
         <td>Sophia</td> 
         <td>Macdonald</td> 
         <td>12/09/76</td>     
-        <td>Female</td>      
+        <td>2</td>      
         <td>18/12/20</td>      
         <td>5</td>
       </tr>
@@ -106,7 +130,7 @@
         <td>Emma</td> 
         <td>Scott</td> 
         <td>14/08/99</td> 
-        <td>Female</td> 
+        <td>2</td> 
         <td>18/12/20</td>    
         <td>2</td>
       </tr>
@@ -116,19 +140,19 @@
         <td>Oliver</td>
         <td>Miller</td> 
         <td>15/07/92</td>
-        <td>Male</td>
+        <td>1</td>
         <td>07/01/21</td>
         <td>2</td> 
       </tr>      
 
       <tr>
-        <td>00009</td>
+        <td>9</td>
         <td>Leo</td>
         <td>Gamalho</td> 
         <td>17/11/92</td>
-        <td>Male</td>
+        <td>1</td>
         <td>07/01/21</td>
-        <td>00002</td>
+        <td>2</td>
       </tr>
 
       <tr>
@@ -136,17 +160,17 @@
         <td>Jennifer</td>
         <td>Campbell</td> 
         <td>18/11/82</td>
-        <td>Female</td>
+        <td>2</td>
         <td>07/01/21</td>
-        <td>00002</td>
+        <td>2</td>
       </tr>
 
       <tr>
-        <td>00011</td>
+        <td>11</td>
         <td>Alexxa</td>
         <td>Adams</td> 
         <td>20/01/86</td>
-        <td>Female</td>
+        <td>2</td>
         <td>13/09/21</td>
         <td>4</td>
       </tr>
@@ -156,29 +180,29 @@
         <td>Zoe</td>
         <td>West</td> 
         <td>21/08/80</td>
-        <td>Female</td>
+        <td>2</td>
         <td>13/09/21</td>
-        <td>00005</td>
+        <td>5</td>
       </tr>
     
       <tr>
-        <td>00013</td>
+        <td>13</td>
         <td>Joseph</td>
         <td>Yorkshire</td>
         <td>23/11/80</td>
-        <td>Male</td>
+        <td>1</td>
         <td>15/11/21</td>
         <td>6</td>
       </tr>
     
       <tr>
-        <td>00014</td>
+        <td>14</td>
         <td>Levi</td> 
         <td>Tobias</td>
         <td>24/03/97</td>
-        <td>Male</td>
+        <td>1</td>
         <td>15/11/21</td>
-        <td>00004</td>
+        <td>4</td>
       </tr>
                 
       <tr>
@@ -186,7 +210,7 @@
         <td>Alexander</td>
         <td>Johnson</td>                          
         <td>26/03/74</td>     
-        <td>Male</td>      
+        <td>1</td>      
         <td>15/11/21</td>      
         <td>3</td>
       </tr>
@@ -196,7 +220,7 @@
         <td>James</td>
         <td>Blair</td>   
         <td>27/06/76</td> 
-        <td>Male</td> 
+        <td>1</td> 
         <td>04/12/21</td>    
         <td>2</td>
       </tr>
@@ -206,7 +230,7 @@
         <td>Alice</td>
         <td>Brown</td> 
         <td>29/06/98</td>
-        <td>Female</td>
+        <td>2</td>
         <td>07/04/22</td>
         <td>2</td> 
       </tr>      
@@ -216,7 +240,7 @@
         <td>Adam</td>
         <td>Kelly</td> 
         <td>30/12/00</td>
-        <td>Male</td>
+        <td>1</td>
         <td>07/04/22</td>
         <td>6</td>
       </tr>
@@ -226,7 +250,7 @@
         <td>Olivia</td>
         <td>Tyler</td> 
         <td>02/12/02</td>
-        <td>Female</td>
+        <td>2</td>
         <td>07/04/22</td>
         <td>8</td>
       </tr>
@@ -236,7 +260,7 @@
         <td>Philip</td>
         <td>Burk</td> 
         <td>03/01/98</td>
-        <td>Male</td>
+        <td>1</td>
         <td>07/04/22</td>
         <td>9</td>
     
